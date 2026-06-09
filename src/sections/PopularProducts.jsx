@@ -1,28 +1,28 @@
-import { products } from '../constants';
-import PopularProductCard from '../components/PopularProductCard';
-
 const PopularProducts = () => {
   return (
     <section 
-    id='products' className='max-container max-sm:mt-12'>
+    id='sobre' className='max-container max-sm:mt-12'>
       <div className='flex flex-col justify-start gap-5 '>
         <h2 className='text-4xl font-palanquin font-bold'>
-          Our <span className='text-coral-red'>Popular</span> Products
-          </h2>
+          Sobre <span className='text-coral-red'>Mim</span>
+        </h2>
         <p className='lg:max-w-lg mt-2 font-montserrat text-slate-gray'>
-        Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value
+          Sou estudante de Ciências Econômicas no IBMEC, com interesse por negócios, empreendedorismo, liderança e inovação. Estou desenvolvendo projetos que unam estratégia, análise financeira e impacto positivo.
         </p>
-        <div 
-        className='
-        mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1
-        sm:gap-4 gap-14 '>
-          {products.map((product)=> (
-            <PopularProductCard
-              key={product.name} {...product}
-            />
-          ))}
+        <div className='mt-16 grid lg:grid-cols-3 md:grid-cols-2 gap-6'>
+          <div className='rounded-[32px] shadow-3xl p-8 bg-white'>
+            <p className='text-xl font-montserrat text-slate-gray'>Faculdade</p>
+            <h3 className='mt-4 text-2xl font-palanquin font-bold'>IBMEC</h3>
+          </div>
+          <div className='rounded-[32px] shadow-3xl p-8 bg-white'>
+            <p className='text-xl font-montserrat text-slate-gray'>Curso</p>
+            <h3 className='mt-4 text-2xl font-palanquin font-bold'>Ciências Econômicas</h3>
+          </div>
+          <div className='rounded-[32px] shadow-3xl p-8 bg-white'>
+            <p className='text-xl font-montserrat text-slate-gray'>Status</p>
+            <h3 className='mt-4 text-2xl font-palanquin font-bold'>Estudante Atual</h3>
+          </div>
         </div>
-
       </div>
     </section>
   )

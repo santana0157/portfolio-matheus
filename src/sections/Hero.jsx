@@ -1,12 +1,9 @@
 import { arrowRight } from "../assets/icons"
-import { bigShoe1 } from "../assets/images"
+import { profileImage } from "../assets/images"
 import Buttons from "../components/Buttons"
-import ShoeCard from "../components/ShoeCard"
-import { shoes, statistics } from "../constants"
-import { useState } from "react"
+import { heroHighlights } from "../constants"
 
 const Hero = () => {
-  const [bigShoeImage, setBigShoeImage] = useState(bigShoe1);
   return (
     <section 
     id="home"
@@ -15,24 +12,24 @@ const Hero = () => {
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full 
       max-xl:padding-x pt-28">
         <p className="text-xl font-montserrat text-coral-red">
-          Our Summer Collection
+          Portfólio Pessoal
         </p>
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
+          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">Matheus</span>
           <br />
-          <span className="text-coral-red inline-block mt-3 ">Nike</span> Shoes
+          <span className="text-coral-red inline-block mt-3 ">Santana</span>
         </h1>
         <p 
         className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm ">
-          Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
+          Sou estudante de Ciências Econômicas no IBMEC, apaixonado por empreendedorismo, negócios, investimentos e desenvolvimento pessoal. Busco constantemente aprender, criar projetos e desenvolver soluções inovadoras para gerar impacto positivo.</p>
         
-        <Buttons label="Shop Now" iconURL={ arrowRight } />
+        <Buttons label="Ver Perfil" iconURL={ arrowRight } />
 
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16 "> 
-        {statistics.map((stat, index)=>(
+        {heroHighlights.map((highlight, index)=>(
           <div key={index}>
-            <p className="text-4xl font-palanquin font-bold ">{stat.value}</p>
-            <p className="leading-7 font-montserrat text-slate-gray ">{stat.label}</p>
+            <p className="text-4xl font-palanquin font-bold ">{highlight.value}</p>
+            <p className="leading-7 font-montserrat text-slate-gray ">{highlight.label}</p>
           </div>
         ))}
         </div>
@@ -40,21 +37,8 @@ const Hero = () => {
       </div>
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen 
       max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
-        <img src={ bigShoeImage } alt="Shoe collection" width={610} height={502}
+        <img src={ profileImage } alt="Foto de perfil de Matheus Santana" width={610} height={502}
         className="object-contain relative z-10" />
-   
-      <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
-        {shoes.map((shoe, index) => (
-          <div key={index}>
-            <ShoeCard 
-            index={index}
-            imgURL={shoe}
-            changeBigShoeImage={(shoe) => setBigShoeImage(shoe)}
-            bigShoeImage={bigShoeImage}
-            />
-          </div>
-        ))}   
-      </div>
       </div>
     </section>
   )

@@ -4,6 +4,8 @@ import bigShoe3 from './big-shoe3.png'
 
 import customer1 from './customer1.jpg'
 import customer2 from './customer2.svg'
+import profileImage from './WhatsApp Image 2026-06-09 at 12.08.32 (1).jpeg'
+import secondProfileImage from './WhatsApp Image 2026-06-09 at 12.17.23.jpeg'
 
 import footerLogo from './footer-logo.svg'
 import headerLogo from './header-logo.svg'
@@ -28,6 +30,8 @@ export {
 
     customer1,
     customer2,
+    profileImage,
+    secondProfileImage,
 
     footerLogo,
     headerLogo,

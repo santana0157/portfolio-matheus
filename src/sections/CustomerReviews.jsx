@@ -1,30 +1,20 @@
-import ReviewCard from "../components/ReviewCard"
-import { reviews } from "../constants"
-
-
+import { profileStatistics } from "../constants"
 
 const CustomReviews = () => {
   return (
-    <section className="max-container ">
+    <section id="estatisticas" className="max-container ">
       <h3 className="font-palanquin text-center text-4xl font-bold ">
-        What Our 
-        <span className="text-coral-red"> Customers </span>
-        Say ?
+        Minhas <span className="text-coral-red">Estatísticas</span>
       </h3>
-      <p className="info-text m-auto mt-4 max-w-lg text-center">Hear genuine stories from our satisfied customers about their exceptional experiences with us. </p>
-      <div className="mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
-       {reviews.map((review, index) => (
-        <ReviewCard 
-          key={index}
-          imgURL={review.imgURL}
-          customerName={review.customerName}
-          rating={review.rating}
-          feedback={review.feedback}
-        />
-       ))} 
-
+      <p className="info-text m-auto mt-4 max-w-lg text-center">Principais métricas do perfil de Matheus Santana, com foco em acadêmico, social e localização.</p>
+      <div className="mt-24 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-8">
+       {profileStatistics.map((stat, index) => (
+        <div key={index} className="rounded-[32px] shadow-3xl p-8 bg-white text-center">
+          <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+          <p className="mt-3 font-montserrat text-slate-gray">{stat.label}</p>
+        </div>
+       ))}
       </div>
-    
     </section>
   )
 }

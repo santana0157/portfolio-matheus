@@ -1,125 +1,103 @@
-import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { instagram, shieldTick, support, truckFast } from "../assets/icons";
+import { profileImage, customer2 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
-    { href: "#products", label: "Products" },
-    { href: "#contact-us", label: "Contact Us" },
+    { href: "#home", label: "Início" },
+    { href: "#sobre", label: "Sobre Mim" },
+    { href: "#formacao", label: "Formação" },
+    { href: "#habilidades", label: "Habilidades" },
+    { href: "#redes", label: "Redes Sociais" },
+    { href: "#contato", label: "Contato" },
 ];
 
 export const shoes = [
     {
-        thumbnail: thumbnailShoe1,
-        bigShoe: bigShoe1,
+        thumbnail: customer2,
+        bigShoe: profileImage,
     },
     {
-        thumbnail: thumbnailShoe2,
-        bigShoe: bigShoe2,
+        thumbnail: customer2,
+        bigShoe: profileImage,
     },
     {
-        thumbnail: thumbnailShoe3,
-        bigShoe: bigShoe3,
+        thumbnail: customer2,
+        bigShoe: profileImage,
     },
 ];
-
-export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+export const heroHighlights = [
+    { value: 'IBMEC', label: 'Faculdade' },
+    { value: 'Ciências Econômicas', label: 'Curso' },
+    { value: 'Empreendedor', label: 'Foco' },
+    { value: 'Brasília - DF', label: 'Localização' },
 ];
 
-export const products = [
-    {
-        imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
-    },
-    {
-        imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
-    },
-    {
-        imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
-    },
-    {
-        imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
-    },
+export const profileStatistics = [
+    { value: '19 anos', label: 'Idade' },
+    { value: '1.779', label: 'Seguidores' },
+    { value: '1.668', label: 'Seguindo' },
+    { value: 'Brasília - DF', label: 'Localização' },
 ];
 
 export const services = [
     {
-        imgURL: truckFast,
-        label: "Free shipping",
-        subtext: "Enjoy seamless shopping with our complimentary shipping service."
+        imgURL: shieldTick,
+        label: "Economia",
+        subtext: "Base sólida em teoria econômica, análise de mercado e modelagem financeira."
     },
     {
-        imgURL: shieldTick,
-        label: "Secure Payment",
-        subtext: "Experience worry-free transactions with our secure payment options."
+        imgURL: truckFast,
+        label: "Empreendedorismo",
+        subtext: "Paixão por lançar ideias e construir projetos com impacto e escalabilidade."
     },
     {
         imgURL: support,
-        label: "Love to help you",
-        subtext: "Our dedicated team is here to assist you every step of the way."
-    },
-];
-
-export const reviews = [
-    {
-        imgURL: customer1,
-        customerName: 'Morich Brown',
-        rating: 4.5,
-        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+        label: "Estratégia de Negócios",
+        subtext: "Experiência em desenvolvimento de estratégias e criação de valor."
     },
     {
-        imgURL: customer2,
-        customerName: 'Lota Mongeskar',
-        rating: 4.5,
-        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
-    }
+        imgURL: shieldTick,
+        label: "Comunicação",
+        subtext: "Habilidade em comunicação clara para apresentações, equipes e networking."
+    },
+    {
+        imgURL: truckFast,
+        label: "Análise Financeira",
+        subtext: "Capacidade de interpretar dados financeiros e apoiar decisões com base em números."
+    },
+    {
+        imgURL: support,
+        label: "Liderança",
+        subtext: "Foco em desenvolvimento de liderança e colaboração em projetos acadêmicos e empreendedores."
+    },
 ];
-
 
 export const footerLinks = [
     {
-        title: "Products",
+        title: "Seções",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "Sobre Mim", link: "#sobre" },
+            { name: "Formação", link: "#formacao" },
+            { name: "Habilidades", link: "#habilidades" },
+            { name: "Redes Sociais", link: "#redes" },
+            { name: "Contato", link: "#contato" },
         ],
     },
     {
-        title: "Help",
+        title: "Conectar",
         links: [
-            { name: "About us", link: "/" },
-            { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
+            { name: "Instagram", link: "https://instagram.com/_matheusrsantana" },
+            { name: "E-mail", link: "mailto:matheus@example.com" },
         ],
     },
     {
-        title: "Get in touch",
+        title: "Contato",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "matheus@example.com", link: "mailto:matheus@example.com" },
+            { name: "Instagram: @_matheusrsantana", link: "https://instagram.com/_matheusrsantana" },
         ],
     },
 ];
 
 export const socialMedia = [
-    { src: facebook, alt: "facebook logo" },
-    { src: twitter, alt: "twitter logo" },
     { src: instagram, alt: "instagram logo" },
-
 ];
